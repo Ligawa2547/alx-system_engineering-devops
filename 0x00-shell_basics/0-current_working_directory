@@ -1,7 +1,2 @@
 #!/bin/bash
-import os
-
-current_dir = os.getcwd()
-absolute_path = os.path.abspath(current_dir)
-print(absolute_path)
-
+echo "$(realpath "$(pwd)")"
